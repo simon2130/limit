@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="home-test.css">
+    <style>
+        header{
+
+	display:flex;
+	justify-content: space-between;
+	width:100%;
+	height:auto;
+	align-items: center;
+	background-color: rgba(38, 38, 37, 0.8);
+	position:fixed;
+	z-index: 100;
+
+
+
+	}
+body{
+	background-color: #262625;
+	}
+
+.logo{
+	margin-left: 2em;
+	}
+.logo a img{
+	width:50%;
+	height:auto;
+	}
+.navs{
+
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	width:70%;
+	height:auto;
+	}
+.navigation{
+
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	width:80%;
+	height:auto;
+	}
+.navigation a{
+	text-decoration: none;
+	color:white;
+	font-size:1.5em;
+	}
+.navigation a:hover{
+	text-decoration:underline;
+
+	}
+
+.profile{
+	width:5em;
+	height:5em;
+	border:3px solid white;
+	border-radius:50%;
+	}
+
+
+
+
+.banner{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+.video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden
+        }
+.video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+.content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+.content h1 {
+            font-size: 2.5rem;
+            color: #ff6600;
+
+        }
+.content button{
+	background-color: #820303;
+	color:white;
+	width:10em;
+	height:2em;
+	border-radius:30px;
+	border:none;
+	font-size: 1.5em;
+	font-weight:bold;
+	}
+
+
+.some-articles{
+	background-color:#262625;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding: 20px;
+    	box-sizing: border-box;
+	}
+.mk-center{
+	display:flex;
+	justify-content:center;
+	margin-bottom: 20px;
+        }
+.strait{
+
+	display:flex;
+	flex-wrap:wrap;
+	color:white;
+	margin-top:5px;
+	justify-content:space-around;
+	width:90%;
+	height:auto;
+
+	}
+.reverse{
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	flex-direction: row-reverse;
+	width:90%;
+	height:auto;
+	color:white;
+	margin-top:5px;
+
+	}
+.img img{
+	width:30em;
+	height:20em;
+
+	}
+.text{
+
+	width:60%;
+	height:auto;
+
+	}
+.text h2{
+	font-size: 3rem;
+	color:  #ff6600;
+	}
+.link-to-blog {
+
+	display:flex;
+	justify-content: center;
+	margin-top:10px;
+	}
+.link-to-blog a button{
+	width:10em;
+	height:2em;
+	background-color:#820303;
+	font-size:1.5em;
+	color:white;
+	border:none;
+	border-radius: 16px;
+	}
+
+
+
+footer{
+	display:flex;
+	flex-direction:column;
+	background-color:#1f1e1e;
+	color:white;
+	padding: 20px;
+    	box-sizing: border-box;
+    	text-align: center;
+}
+
+.footer{
+
+
+	display:flex;
+	justify-content: space-around;
+	}
+.map{
+
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	margin-top: 5px;
+	}
+
+
+
+.contact{
+
+	font-size:2em;
+	display:flex;
+	flex-direction:column;
+	align-items: top;
+	width:10em;
+	margin-top:5px;
+	}
+.contact p{
+	text-align: center;
+	text-decoration: underline overline;
+	}
+
+.email{
+
+
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	width:60%;
+	height:1.2em;
+	}
+.email i{
+	font-size:1.7em;
+	color:white;
+	}
+.social{
+	margin-top:10px;
+	display:flex;
+	justify-content: space-around;
+
+	}
+.social i{
+	color:white;
+	}
+.fa-instagram:hover{
+	color: #ff002b;
+	}
+.fa-youtube:hover{
+	color:red;
+	}
+.fa-twitter:hover, .fa-facebook:hover{
+	color:#0763e3;
+	}
+.fa-tiktok:hover{
+	color:silver;
+	}
+.fa-phone:hover{
+	color:green;
+	}
+.fa-envelope:hover{
+	color:silver;
+	}
+
+.rate{
+
+	font-size:3em;
+	margin-top:5px;
+	text-align:center;
+	font-weight: bold;
+	}
+#i1, #i2, #i3{
+	color:white;
+	}
+#i4, #i5{
+	color:gray;
+	}
+
+.phone{
+	display:flex;
+	width:75%;
+	justify-content:space-around;
+	margin-top: 10px;
+	align-items:center;
+	}
+.phone i{
+	font-size: 1.5em;
+	color:white;
+	}
+#copyright{
+	text-align: center;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .navigation {
+        display:none;
+    }
+
+    .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+    .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.open-btn {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.open-btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content button {
+        font-size: 1.2em;
+        width: 8em;
+        height: 1.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        margin-left: 1em;
+    }
+
+   .navigation {
+        display:none;
+    }
+
+    .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.open-btn {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.open-btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    .content button {
+        font-size: 1em;
+        width: 7em;
+        height: 1.5em;
+    }
+    .text h2 {
+        font-size: 2rem;
+    }
+    .link-to-blog a button {
+        font-size: 1.2em;
+        width: 8em;
+        height: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .sidebar {
+        display: none; /* Hide sidebar on larger screens */
+    }
+
+    .open-btn {
+        display: none; /* Hide the open button on larger screens */
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        width: 250px; /* Set sidebar width for small screens */
+    }
+
+    .open-btn {
+        display: block; /* Display the open button */
+    }
+
+
+}
+
+    </style>
+
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="home.html"><img src="drinks.jpeg" alt="company logo"></a>
+    </div>
+    <div class="navs">
+        <div class="navigation">
+            <a href="home.html">HOME</a>
+            <a href="membership.html">MEMBERSHIP</a>
+            <a href="class.html">CLASSES & PROGRAMS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="about.html">ABOUT US</a>
+
+        </div>
+        <div class="nav-container">
+   <button class="open-btn" onclick="openNav()">☰</button>
+    <nav id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        </div>
+        <div class="profile">
+
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="banner">
+          <div class="video-container">
+        <video autoplay muted loop  >
+            <source src="banner-video.mp4" type="video/mp4">
+            <!-- Add more <source> elements for other video formats -->
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+    <!-- Content with Text -->
+        <div class="content">
+            <h1>sweet, smile, repeat: your fitness journey starts here.</h1>
+            <button>JOIN NOW</button>
+        </div>
+    </section>
+    <section class="some-articles">
+        <div class="mk-center">
+        <div class="strait">
+           <div class="img">
+               <img src="drinks.jpeg" alt="your browser can not support this image">
+           </div>
+            <div class="text">
+                <h2>nutrition tips</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero maxime molestiae mollitia quia quis repellendus sit, tempore voluptatem. Ad amet animi corporis error ipsa natus quasi similique tempora vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi corporis cum cupiditate dicta eius exercitationem inventore iure maiores minima molestias neque nihil perspiciatis sapiente, tempore temporibus ullam, voluptatibus voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore ducimus est natus nihil quasi quidem reiciendis rem? Aliquid aperiam dolorum laborum nemo. Aliquid autem odio, perspiciatis praesentium sunt voluptatum.</p>
+                <div class="link-to-blog"><a href="blog.html"><button>learn more</button></a></div>
+            </div>
+
+        </div>
+            </div>
+        <div class="mk-center">
+        <div class="reverse">
+           <div class="img">
+               <img src="drinks.jpeg" alt="your browser can not support this image">
+           </div>
+            <div class="text">
+                <h2>nutrition tips</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero maxime molestiae mollitia quia quis repellendus sit, tempore voluptatem. Ad amet animi corporis error ipsa natus quasi similique tempora vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi corporis cum cupiditate dicta eius exercitationem inventore iure maiores minima molestias neque nihil perspiciatis sapiente, tempore temporibus ullam, voluptatibus voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore ducimus est natus nihil quasi quidem reiciendis rem? Aliquid aperiam dolorum laborum nemo. Aliquid autem odio, perspiciatis praesentium sunt voluptatum.</p>
+                <div class="link-to-blog"><a href="blog.html#article05"><button>learn more</button></a></div>
+            </div>
+
+        </div>
+            </div>
+        <div class="mk-center">
+        <div class="strait">
+           <div class="img">
+               <img src="drinks.jpeg" alt="your browser can not support this image">
+           </div>
+            <div class="text">
+                <h2>nutrition tips</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero maxime molestiae mollitia quia quis repellendus sit, tempore voluptatem. Ad amet animi corporis error ipsa natus quasi similique tempora vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi corporis cum cupiditate dicta eius exercitationem inventore iure maiores minima molestias neque nihil perspiciatis sapiente, tempore temporibus ullam, voluptatibus voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore ducimus est natus nihil quasi quidem reiciendis rem? Aliquid aperiam dolorum laborum nemo. Aliquid autem odio, perspiciatis praesentium sunt voluptatum.</p>
+                <div class="link-to-blog"><a href="blog.html"><button>learn more</button></a></div>
+            </div>
+
+        </div>
+            </div>
+        <div class="mk-center">
+        <div class="reverse">
+           <div class="img">
+               <img src="drinks.jpeg" alt="your browser can not support this image">
+           </div>
+            <div class="text">
+                <h2>nutrition tips</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero maxime molestiae mollitia quia quis repellendus sit, tempore voluptatem. Ad amet animi corporis error ipsa natus quasi similique tempora vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi corporis cum cupiditate dicta eius exercitationem inventore iure maiores minima molestias neque nihil perspiciatis sapiente, tempore temporibus ullam, voluptatibus voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore ducimus est natus nihil quasi quidem reiciendis rem? Aliquid aperiam dolorum laborum nemo. Aliquid autem odio, perspiciatis praesentium sunt voluptatum.</p>
+                <div class="link-to-blog"><a href="blog.html"><button>learn more</button></a></div>
+            </div>
+
+        </div>
+            </div>
+
+    </section>
+</main>
+<footer>
+    <div class="footer">
+    <div class="map">
+        <a href="https://www.google.com/maps/place/%E1%8A%A0%E1%8B%B2%E1%88%B5+%E1%8A%A0%E1%89%A0%E1%89%A3+%E1%89%B4%E1%8A%AD%E1%8A%96%E1%88%8E%E1%8C%82+%E1%8A%A2%E1%8A%95%E1%88%B5%E1%89%B2%E1%89%B5%E1%8B%A9%E1%89%B5/@9.040026,38.7589384,17z/data=!4m10!1m2!2m1!1saait!3m6!1s0x164b8f642ba9e021:0x2321687a606863f3!8m2!3d9.0403935!4d38.7633169!15sCgRhYWl0kgEKdW5pdmVyc2l0eeABAA!16s%2Fg%2F1tl5cljm?hl=am&entry=ttu" target="_blank"><img
+                src="drinks.jpeg" ></a>
+        <h3>5 kilo</h3>
+    </div>
+    <div class="contact">
+        <p>CONTACT US</p>
+        <div class="email">
+            <a href="mailto:youremail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <lable>g-mail</lable>
+        </div>
+        <div class="social">
+            <a href="facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="youtube.com.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="phone">
+            <a href="tel:+1234567890" target="_blank"><i class="fas fa-phone"></i></a>
+            <lable>0910101010</lable>
+        </div>
+
+    </div>
+    <div class="rate">
+            <p>rate us</p>
+            <a href="https://www.google.com/maps/place/%E1%8A%A0%E1%8B%B2%E1%88%B5+%E1%8A%A0%E1%89%A0%E1%89%A3+%E1%89%B4%E1%8A%AD%E1%8A%96%E1%88%8E%E1%8C%82+%E1%8A%A2%E1%8A%95%E1%88%B5%E1%89%B2%E1%89%B5%E1%8B%A9%E1%89%B5/@9.0403935,38.760742,17z/data=!4m12!1m2!2m1!1saait!3m8!1s0x164b8f642ba9e021:0x2321687a606863f3!8m2!3d9.0403935!4d38.7633169!9m1!1b1!15sCgRhYWl0kgEKdW5pdmVyc2l0eeABAA!16s%2Fg%2F1tl5cljm?hl=am&entry=ttu" target="_blank"><i class="fas fa-star" id="i1"></i><i class="fas fa-star" id="i2"></i><i class="fas fa-star"id="i3"></i><i class="fas fa-star" id="i4"></i><i class="fas fa-star" id="i5"></i></a>
+        </div>
+    </div>
+    <p id="copyright">copywrite</p>
+</footer>
+<script>
+        function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+}
+
+    </script>
+</body>
+</html>
